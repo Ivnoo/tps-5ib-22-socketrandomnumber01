@@ -1,0 +1,22 @@
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.exe.config
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.exe
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.pdb
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.AssemblyReference.cache
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.SuggestedBindingRedirects.cache
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.Form1.resources
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.Properties.Resources.resources
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.GenerateResource.cache
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.CoreCompileInputs.cache
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.exe
+C:\CloudSync\__Scuola\TeP\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.pdb
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.exe.config
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.exe
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.pdb
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.AssemblyReference.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.SuggestedBindingRedirects.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.Form1.resources
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.Properties.Resources.resources
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.GenerateResource.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.CoreCompileInputs.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.exe
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.pdb
