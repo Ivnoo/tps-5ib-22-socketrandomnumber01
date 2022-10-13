@@ -20,3 +20,14 @@ C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\Client\Client\obj\Debug\
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\Client\Client\obj\Debug\Client.exe
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto\Client\Client\obj\Debug\Client.pdb
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\bin\Debug\Client.exe.config
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\bin\Debug\Client.exe
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\bin\Debug\Client.pdb
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.Form1.resources
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.Properties.Resources.resources
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.exe
+C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.pdb

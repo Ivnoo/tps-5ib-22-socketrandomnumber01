@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnConnessione = new System.Windows.Forms.Button();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
@@ -35,12 +36,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtConnection = new System.Windows.Forms.Label();
             this.listBox = new System.Windows.Forms.ListBox();
+            this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConnessione
             // 
             this.btnConnessione.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnessione.Location = new System.Drawing.Point(15, 273);
+            this.btnConnessione.Location = new System.Drawing.Point(12, 196);
             this.btnConnessione.Name = "btnConnessione";
             this.btnConnessione.Size = new System.Drawing.Size(131, 41);
             this.btnConnessione.TabIndex = 0;
@@ -88,7 +91,7 @@
             // 
             this.txtConnection.AutoSize = true;
             this.txtConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConnection.Location = new System.Drawing.Point(12, 244);
+            this.txtConnection.Location = new System.Drawing.Point(12, 177);
             this.txtConnection.Name = "txtConnection";
             this.txtConnection.Size = new System.Drawing.Size(44, 16);
             this.txtConnection.TabIndex = 8;
@@ -99,14 +102,18 @@
             this.listBox.FormattingEnabled = true;
             this.listBox.Location = new System.Drawing.Point(163, 12);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(625, 303);
+            this.listBox.Size = new System.Drawing.Size(481, 225);
             this.listBox.TabIndex = 9;
+            // 
+            // errorProvider
+            // 
+            this.errorProvider.ContainerControl = this;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 326);
+            this.ClientSize = new System.Drawing.Size(654, 246);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.txtConnection);
             this.Controls.Add(this.label2);
@@ -115,8 +122,9 @@
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.btnConnessione);
             this.Name = "Form1";
-            this.Text = "z";
+            this.Text = "Client";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,6 +139,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label txtConnection;
         private System.Windows.Forms.ListBox listBox;
+        private System.Windows.Forms.ErrorProvider errorProvider;
     }
 }
 

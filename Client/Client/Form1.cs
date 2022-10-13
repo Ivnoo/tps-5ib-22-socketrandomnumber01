@@ -14,76 +14,88 @@ namespace Client
         {
             InitializeComponent();
         }
+
+        bool next = false;
         public static string data;
         byte[] bytes = new byte[1024];
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            
-        }
-
-        private void startClient(string message)
-        {
-            
+            txtConnection.Text = "Nessuna connessione al server";
+            txtConnection.ForeColor = System.Drawing.Color.Red;
         }
 
         private void btnConnessione_Click(object sender, EventArgs e)
         {
-            string user = Convert.ToString(txtUsername.Text);
-            string pass = Convert.ToString(txtPass.Text);
-            string message = user + ";" + pass + ";<EOF>";
-            string showToUser = "Ciao server, sono " + user + ", mi generi un numero?";
+            if (string.IsNullOrEmpty(txtUsername.Text))
+                errorProvider.SetError(txtUsername, "Devi inserire uno username!");
+            else
+                next = true;
+            if (string.IsNullOrEmpty(txtPass.Text))
+                errorProvider.SetError(txtPass, "Devi inserire una password!");
+            else
+                next = true;
 
-            byte[] bytes = new byte[1024];
-
-            try
+            if (next)
             {
+                string user = Convert.ToString(txtUsername.Text);
+                string pass = Convert.ToString(txtPass.Text);
+                string message = user + ";" + pass + ";<EOF>";
+                string showToUser = "Ciao server, sono " + user + ", mi generi un numero?";
 
-                IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
-                IPEndPoint remoteEP = new IPEndPoint(ipAddress, 5000);
-
-                Socket send = new Socket(ipAddress.AddressFamily,
-                    SocketType.Stream, ProtocolType.Tcp);
+                byte[] bytes = new byte[1024];
 
                 try
                 {
-                    send.Connect(remoteEP);
+                    IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
+                    IPEndPoint remoteEP = new IPEndPoint(ipAddress, 5000);
 
-                    Console.WriteLine("Socket connected to {0}",
-                        send.RemoteEndPoint.ToString());
+                    Socket send = new Socket(ipAddress.AddressFamily,
+                        SocketType.Stream, ProtocolType.Tcp);
 
-                    listBox.Items.Add(showToUser);
-                    byte[] msg = Encoding.ASCII.GetBytes(message);
+                    try
+                    {
+                        send.Connect(remoteEP);
+                        txtConnection.Text = "Connessione stabilita";
+                        txtConnection.ForeColor = System.Drawing.Color.Green;
 
-                    int bytesSent = send.Send(msg);
+                        Console.WriteLine("Socket connected to {0}",
+                            send.RemoteEndPoint.ToString());
 
-                    int bytesRec = send.Receive(bytes);
-                    Console.WriteLine("Echoed test = {0}",
-                        Encoding.ASCII.GetString(bytes, 0, bytesRec));
+                        listBox.Items.Add(showToUser);
+                        byte[] msg = Encoding.ASCII.GetBytes(message);
 
-                    listBox.Items.Add(Encoding.ASCII.GetString(bytes, 0, bytesRec));
-                    send.Shutdown(SocketShutdown.Both);
-                    send.Close();
+                        int bytesSent = send.Send(msg);
 
-                }
-                catch (ArgumentNullException ane)
-                {
-                    Console.WriteLine("ArgumentNullException : {0}", ane.ToString());
-                }
-                catch (SocketException se)
-                {
-                    Console.WriteLine("SocketException : {0}", se.ToString());
+                        int bytesRec = send.Receive(bytes);
+                        Console.WriteLine("Echoed test = {0}",
+                            Encoding.ASCII.GetString(bytes, 0, bytesRec));
+
+                        listBox.Items.Add(Encoding.ASCII.GetString(bytes, 0, bytesRec));
+                        send.Shutdown(SocketShutdown.Both);
+                        send.Close();
+                    }
+                    catch (ArgumentNullException ane)
+                    {
+                        Console.WriteLine("ArgumentNullException : {0}", ane.ToString());
+                    }
+                    catch (SocketException se)
+                    {
+                        Console.WriteLine("SocketException : {0}", se.ToString());
+                    }
+                    catch (Exception a)
+                    {
+                        Console.WriteLine("Unexpected exception : {0}", a.ToString());
+                    }
                 }
                 catch (Exception a)
                 {
-                    Console.WriteLine("Unexpected exception : {0}", a.ToString());
+                    Console.WriteLine(a.ToString());
+                    txtConnection.Text = "Errore durante la connessione al server";
+                    txtConnection.ForeColor = System.Drawing.Color.Red;
                 }
-
             }
-            catch (Exception a)
-            {
-                Console.WriteLine(a.ToString());
-            }
+            
         }
     }
 }
