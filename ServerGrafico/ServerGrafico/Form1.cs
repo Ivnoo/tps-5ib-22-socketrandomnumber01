@@ -28,6 +28,22 @@ namespace ServerGrafico
 
         }
 
+
+        class Access
+        {
+            private string user;
+            private string password;
+
+            public Access(string user, string password)
+            {
+                this.user = user;
+                this.password = password;
+            }
+
+            public string User { get { return user; } }
+            public string Password { get { return password; } }
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             string path = @"accessList.csv";
@@ -47,9 +63,6 @@ namespace ServerGrafico
                 string[] doc = line.Split(';');
                 db.Add(doc[0], doc[1]);
             }
-
-            string user = "ivan";
-            string pass = "1234";
 
             try
             {
@@ -75,22 +88,34 @@ namespace ServerGrafico
                     }
                     string[] access = data.Split(';');
 
-                    if (access[0]==user && access[1] == pass)
+                    bool trovato = false;
+
+                    string p;
+                    if (db.ContainsKey(access[0]))
                     {
-                        listBox.Items.Add("Accetto connessione per " + access[0] + ", utente presente nel database");
-                        listBox.Refresh();
-                        Console.WriteLine("Text received : {0}", data);
-                        data = "Genero un numero randomico: " + r.Next();
-                        listBox.Items.Add(data);
-                        listBox.Refresh();
+                        db.TryGetValue(access[0], out p);
+                        if (access[1] == p)
+                        {
+                            listBox.Items.Add("Accetto connessione per " + access[0] + ", utente presente nel database");
+                            listBox.Refresh();
+                            Console.WriteLine("Text received : {0}", data);
+                            data = "Genero un numero randomico: " + r.Next();
+                            listBox.Items.Add(data);
+                            listBox.Refresh();
+                        }
+                        else
+                        {
+                            listBox.Items.Add("Rifiuto connessione per " + access[0] + ", utente o password errati/non presenti nel database");
+                            listBox.Refresh();
+                            data = "Mi dispiace, hai sbagliato la password o non sei presente nel database!";
+                        }
                     }
                     else
                     {
-                        listBox.Items.Add("Rifiuto connessione per " + access[0] + ", utente non presente nel database");
+                        listBox.Items.Add("Rifiuto connessione per " + access[0] + ", utente o password errati/non presenti nel database");
                         listBox.Refresh();
-                        data = "Mi dispiace, non sei presente nel database e quindi non posso fornirti un numero!";
+                        data = "Mi dispiace, hai sbagliato la password o non sei presente nel database!";
                     }
-
 
                     byte[] msg = Encoding.ASCII.GetBytes(data);
                     handler.Send(msg);

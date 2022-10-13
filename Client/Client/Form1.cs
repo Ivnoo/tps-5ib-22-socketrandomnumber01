@@ -21,7 +21,7 @@ namespace Client
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            txtConnection.Text = "Nessuna connessione al server";
+            txtConnection.Text = "Nessuna connessione";
             txtConnection.ForeColor = System.Drawing.Color.Red;
         }
 
@@ -56,7 +56,7 @@ namespace Client
                     try
                     {
                         send.Connect(remoteEP);
-                        txtConnection.Text = "Connessione stabilita";
+                        txtConnection.Text = "Socket aperta";
                         txtConnection.ForeColor = System.Drawing.Color.Green;
 
                         Console.WriteLine("Socket connected to {0}",
@@ -91,7 +91,7 @@ namespace Client
                 catch (Exception a)
                 {
                     Console.WriteLine(a.ToString());
-                    txtConnection.Text = "Errore durante la connessione al server";
+                    txtConnection.Text = "Errore durante la connessione";
                     txtConnection.ForeColor = System.Drawing.Color.Red;
                 }
             }
