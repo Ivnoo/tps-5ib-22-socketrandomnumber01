@@ -23,9 +23,19 @@ namespace ServerGrafico
         Random r = new Random();
         public static string data = null;
 
+        string path = @"accessList.csv";
+        Dictionary<string, string> db = new Dictionary<string, string>();
+        int nMin, nMax;
+
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            string[] lines = File.ReadAllLines(path);
+            foreach (string line in lines)
+            {
+                string[] doc = line.Split(';');
+                db.Add(doc[0], doc[1]);
+                listUsers.Items.Add(doc[0]);
+            }
         }
 
 
@@ -46,9 +56,6 @@ namespace ServerGrafico
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string path = @"accessList.csv";
-            Dictionary<string, string> db = new Dictionary<string, string>();
-
             byte[] bytes = new Byte[1024];
 
             IPAddress ipAddress = IPAddress.Parse("127.0.0.1");
@@ -56,13 +63,6 @@ namespace ServerGrafico
 
             Socket listener = new Socket(ipAddress.AddressFamily,
                 SocketType.Stream, ProtocolType.Tcp);
-
-            string[] lines = File.ReadAllLines(path);
-            foreach (string line in lines)
-            {
-                string[] doc = line.Split(';');
-                db.Add(doc[0], doc[1]);
-            }
 
             try
             {
@@ -86,9 +86,8 @@ namespace ServerGrafico
                             break;
                         }
                     }
-                    string[] access = data.Split(';');
 
-                    bool trovato = false;
+                    string[] access = data.Split(';');
 
                     string p;
                     if (db.ContainsKey(access[0]))
@@ -99,7 +98,9 @@ namespace ServerGrafico
                             listBox.Items.Add("Accetto connessione per " + access[0] + ", utente presente nel database");
                             listBox.Refresh();
                             Console.WriteLine("Text received : {0}", data);
-                            data = "Genero un numero randomico: " + r.Next();
+                            nMin = Convert.ToInt32(access[2]);
+                            nMax = Convert.ToInt32(access[3]);
+                            data = "Ciao " + access[0] + ", genero un numero randomico tra " + nMin + " e " + nMax + ": " + r.Next(nMin, nMax);
                             listBox.Items.Add(data);
                             listBox.Refresh();
                         }

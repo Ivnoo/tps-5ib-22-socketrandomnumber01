@@ -31,3 +31,14 @@ C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.CoreCompileInputs.cache
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.exe
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.pdb
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.exe.config
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.exe
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\bin\Debug\ServerGrafico.pdb
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.AssemblyReference.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.SuggestedBindingRedirects.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.Form1.resources
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.Properties.Resources.resources
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.GenerateResource.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.csproj.CoreCompileInputs.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.exe
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\ServerGrafico\ServerGrafico\obj\Debug\ServerGrafico.pdb

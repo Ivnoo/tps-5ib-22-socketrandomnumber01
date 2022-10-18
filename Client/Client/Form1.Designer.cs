@@ -37,13 +37,17 @@
             this.txtConnection = new System.Windows.Forms.Label();
             this.listBox = new System.Windows.Forms.ListBox();
             this.errorProvider = new System.Windows.Forms.ErrorProvider(this.components);
+            this.txtMin = new System.Windows.Forms.TextBox();
+            this.txtMax = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider)).BeginInit();
             this.SuspendLayout();
             // 
             // btnConnessione
             // 
             this.btnConnessione.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnConnessione.Location = new System.Drawing.Point(12, 196);
+            this.btnConnessione.Location = new System.Drawing.Point(12, 222);
             this.btnConnessione.Name = "btnConnessione";
             this.btnConnessione.Size = new System.Drawing.Size(131, 41);
             this.btnConnessione.TabIndex = 0;
@@ -62,7 +66,7 @@
             // txtPass
             // 
             this.txtPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPass.Location = new System.Drawing.Point(15, 96);
+            this.txtPass.Location = new System.Drawing.Point(15, 79);
             this.txtPass.Name = "txtPass";
             this.txtPass.Size = new System.Drawing.Size(131, 22);
             this.txtPass.TabIndex = 2;
@@ -81,7 +85,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 75);
+            this.label2.Location = new System.Drawing.Point(12, 58);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(75, 18);
             this.label2.TabIndex = 4;
@@ -91,7 +95,7 @@
             // 
             this.txtConnection.AutoSize = true;
             this.txtConnection.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtConnection.Location = new System.Drawing.Point(12, 177);
+            this.txtConnection.Location = new System.Drawing.Point(12, 203);
             this.txtConnection.Name = "txtConnection";
             this.txtConnection.Size = new System.Drawing.Size(44, 16);
             this.txtConnection.TabIndex = 8;
@@ -102,18 +106,56 @@
             this.listBox.FormattingEnabled = true;
             this.listBox.Location = new System.Drawing.Point(163, 12);
             this.listBox.Name = "listBox";
-            this.listBox.Size = new System.Drawing.Size(481, 225);
+            this.listBox.Size = new System.Drawing.Size(481, 251);
             this.listBox.TabIndex = 9;
             // 
             // errorProvider
             // 
             this.errorProvider.ContainerControl = this;
             // 
+            // txtMin
+            // 
+            this.txtMin.Location = new System.Drawing.Point(69, 132);
+            this.txtMin.Name = "txtMin";
+            this.txtMin.Size = new System.Drawing.Size(74, 20);
+            this.txtMin.TabIndex = 10;
+            // 
+            // txtMax
+            // 
+            this.txtMax.Location = new System.Drawing.Point(69, 160);
+            this.txtMax.Name = "txtMax";
+            this.txtMax.Size = new System.Drawing.Size(74, 20);
+            this.txtMax.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(12, 134);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(51, 18);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "N. Min";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 162);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(55, 18);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "N. Max";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(654, 246);
+            this.ClientSize = new System.Drawing.Size(654, 277);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.txtMax);
+            this.Controls.Add(this.txtMin);
             this.Controls.Add(this.listBox);
             this.Controls.Add(this.txtConnection);
             this.Controls.Add(this.label2);
@@ -140,6 +182,10 @@
         private System.Windows.Forms.Label txtConnection;
         private System.Windows.Forms.ListBox listBox;
         private System.Windows.Forms.ErrorProvider errorProvider;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtMax;
+        private System.Windows.Forms.TextBox txtMin;
     }
 }
 

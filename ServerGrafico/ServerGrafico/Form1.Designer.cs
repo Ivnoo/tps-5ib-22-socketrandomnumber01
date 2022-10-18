@@ -38,9 +38,9 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(433, 253);
+            this.button1.Location = new System.Drawing.Point(433, 255);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(242, 100);
+            this.button1.Size = new System.Drawing.Size(242, 98);
             this.button1.TabIndex = 0;
             this.button1.Text = "Start Server";
             this.button1.UseVisualStyleBackColor = true;

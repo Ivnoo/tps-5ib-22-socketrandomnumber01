@@ -31,3 +31,14 @@ C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.exe
 C:\CloudSync\__Scuola\Tecnologie Progettazione\Progetto Socket CS Random Number\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.pdb
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\bin\Debug\Client.exe.config
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\bin\Debug\Client.exe
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\bin\Debug\Client.pdb
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.AssemblyReference.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.SuggestedBindingRedirects.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.Form1.resources
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.GenerateResource.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.csproj.CoreCompileInputs.cache
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.exe
+D:\Tecnologie e Progettazione GitHub\tps-5ib-22-socketrandomnumber01\Client\Client\obj\Debug\Client.pdb

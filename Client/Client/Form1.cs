@@ -35,13 +35,32 @@ namespace Client
                 errorProvider.SetError(txtPass, "Devi inserire una password!");
             else
                 next = true;
+            if (string.IsNullOrEmpty(txtMin.Text))
+                errorProvider.SetError(txtMin, "Devi inserire un numero!");
+            else
+                next = true;
+            if (String.IsNullOrEmpty(txtMax.Text))
+                errorProvider.SetError(txtMax, "Devi inserire un numero!");
+            else
+            {
+                next = true;
+                if (Convert.ToInt32(txtMin.Text) >= Convert.ToInt32(txtMax.Text))
+                {
+                    errorProvider.SetError(txtMin, "Il valore minimo non può essere superiore a quello massimo!");
+                    errorProvider.SetError(txtMax, "Il valore massimo non può essere inferiore a quello minimo!");
+                    next = false;
+                }
+                else
+                    next = true;
+
+            }
 
             if (next)
             {
                 string user = Convert.ToString(txtUsername.Text);
                 string pass = Convert.ToString(txtPass.Text);
-                string message = user + ";" + pass + ";<EOF>";
-                string showToUser = "Ciao server, sono " + user + ", mi generi un numero?";
+                string message = user + ";" + pass + ";" + Convert.ToInt32(txtMin.Text) + ";" + Convert.ToInt32(txtMax.Text) + ";<EOF>";
+                string showToUser = "Ciao server, sono " + user + ", mi generi un numero compreso tra " + txtMin.Text + " e " + txtMax.Text + "?";
 
                 byte[] bytes = new byte[1024];
 
